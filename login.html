@@ -1,0 +1,112 @@
+<!--
+! Red 
+? Blue 
+^ Green 
+~ Yellow
+& Pink
+* Purple 
+todo Mustard 
+// Grey 
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylelogin.css">
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+    <title>Tela de login</title>
+</head>
+
+<body>
+    
+    <header>
+        <h2 class="logo"><img src="imagens/logo.png" alt="logosite" width="60"></h2>
+          <nav class="navegacao">
+          <a href="home.html">Home</a>
+          <a href="#">Sobre</a>
+          <a href="#">Servicos</a>
+          <a href="#">Contato</a>
+          <button class="btnLogin-popup">Login</button>
+       </nav>
+    </header>
+
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+
+
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="imput-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <iabel class="input-box2">Email</iabel>
+                </div>
+                <div class="imput-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="senha" required>
+                    <iabel>Senha</iabel>
+                </div>
+                <div class="lembreme-forgot">
+                    <iabel><input type="checkbox">
+                    Lembre me</iabel>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Nao tem uma conta?<a href="#" class="register-link"> Cadaste-se</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box cadastro">
+            <h2>Cadastro</h2>
+            <form action="#">
+                <div class="imput-box">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="text" required>
+                    <iabel>Nome Completo</iabel>
+                </div>
+                <div class="imput-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <iabel>Email</iabel>
+                </div>
+                <div class="imput-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="senha" required>
+                    <iabel>Senha</iabel>
+                </div>
+                <div class="lembreme-forgot">
+                    <iabel><input type="checkbox">
+                    Eu aceito os termos e condições</iabel>
+                </div>
+                <button type="submit" class="btn">Cadastar-se</button>
+                <div class="login-register">
+                    <p>Ja tem uma conta?<a href="#" class="login-link"> login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="scriptlogin.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

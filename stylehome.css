@@ -1,0 +1,610 @@
+/*
+! Red 
+? Blue 
+^ Green 
+~ Yellow
+& Pink
+* Purple 
+todo Mustard 
+// Grey 
+*/
+
+
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
+
+/* !Geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Delicious Handrawn', sans-serif;
+
+}
+
+
+
+
+
+
+/* !Corpo */
+
+body {
+    background: #fff;
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+/* !Cabeçario */
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 3;
+}
+
+
+
+
+
+
+/* *Parte Responviva */
+
+@media (max-width: 2000px){
+
+    #navgeral {
+        padding-left: 740px;
+        padding-top: 30px;
+    }
+
+    .buttonback a {
+        padding-left: 894.5px;
+        padding-right: 894.5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #port1 {
+        margin-bottom: 100px;
+        margin-right: 120px;
+    
+        border: 4px solid white;
+    }
+    
+    
+    /*& Imagens Portifolio exemplo 2 */
+    
+    #port2 {
+        margin-bottom: 100px;
+        margin-right: 120px;
+        margin-left: 100px;
+    
+        border: 4px solid white;
+    }
+    
+    
+    /*& Imagen Portifolio exemplo 3*/
+    
+    #port3 {
+        margin-bottom: 100px;
+        margin-right: 120px;
+        margin-left: 100px;
+    
+        border: 4px solid white;
+    }
+}
+
+
+@media (max-width: 1600px){
+
+    #navgeral {
+        padding-left: 530px;
+        padding-top: 30px;
+    }
+
+    .buttonback a {
+        padding: 10px 695.7px 10px 695.7px;
+    }
+
+    #port1 {
+        margin-bottom: 100px;
+    
+        border: 4px solid white;
+
+        transition: 0.5s;
+    }
+    
+    
+    /*& Imagens Portifolio exemplo 2 */
+    
+    #port2 {
+        margin-bottom: 60px;
+        margin-right: 155px;
+    
+        border: 4px solid white;
+    }
+    
+    
+    /*& Imagen Portifolio exemplo 3*/
+    
+    #port3 {
+        margin-bottom: 100px;
+        margin-right: 98px;
+        margin-left: 74px;
+    
+        border: 4px solid white;
+    }
+}
+
+
+
+
+
+
+/* !h2 Geral */
+
+h2 {
+    text-align: center;
+    /*font-family: 'Delicious Handrawn', cursive;*/
+    font-size: 90px;
+}
+
+/*#navgeral {  substituido pelo @media q deu mais certo
+    padding-left: 530px;
+    padding-top: 30px;
+}*/
+
+
+
+
+
+
+/* ^Logo */
+
+.logo {
+    font-size: 2em;
+    color: #359381;
+    pointer-events: none;
+    margin-right: 270px;
+}
+
+
+
+
+
+
+/* ?Barra de Navegaçao */
+
+.navigation a {
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #359381;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 0 13px;
+    font-weight: 500;
+    font-family: 'pacifico', sans-serif;
+    transition: 1s;
+}
+
+
+.navigation a:hover {
+    background: #359381;
+    color: white;
+    cursor: pointer;
+}
+
+
+/*.navigation button {  fiz um melhor o de baixo q substituiu esse 
+    text-decoration: none;
+    color: #359381;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 0 13px;
+    font-weight: 600;
+    font-family: 'pacifico', sans-serif;
+}*/
+
+/*.navigation button:hover {
+    background: #359381;
+    color: rgb(255, 255, 255);
+}*/
+
+
+/* ?Barra de Navegaçao, Parte Botao de Login */
+
+.navbtnlogin {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #359381;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #359381;
+    font-weight: 500;
+    margin-left: 10px;
+    transition: .5s;
+    text-align: center;
+    padding-top: 8px;
+}
+
+
+.navbtnlogin:hover {
+    background: #359381;
+    color: white;
+    cursor: pointer;
+}
+
+
+.btnLogin-popup {
+    border: 0px;
+    background: transparent;
+    font-size: 20px;
+    font-family: 'pacifico';
+    color: inherit;
+    transition: 1s;
+
+}
+
+
+.navbtnlogin::after {
+    transition: 20s;
+}
+
+
+.btnLogin-popup:hover {
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/*? Barra de Navegaçao, Parte das Tres Barrinhas */
+
+aside > button {
+    background: transparent;
+    border: 0px solid transparent; 
+    position: fixed;
+    right: 0%;
+
+    z-index: 5;
+
+}
+
+
+aside > button > img:hover {
+    width: 100px;
+    right: 40px;
+    cursor: pointer;
+}
+
+aside > button > img:active {
+  
+}
+
+
+aside > button > img {
+    display: inline-block;
+    width: 50px;
+    transition: 0.5s;
+    display: block;
+}
+
+/*? dentro do menu hamburguer */
+
+#box1 {
+    background-color: rgba(128, 128, 128, 0.365);
+    width: 10px;
+    height: 100%;
+    padding-top: 1px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+}
+
+
+
+
+
+/*&  Nome duscb, Parte Elemento ( iMAGEM E TEXTO ) */
+
+.dusckb {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /*descobrir se é vh ou hv*/
+    z-index: 1;
+}
+
+
+/*& Nome dusckb, Parte Texto */
+
+#text {
+    position: absolute;
+    font-family: 'Pacifico', cursive;
+    font-size: 10em;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+
+/*& Nome dusckb, Parte Imagens */
+
+.dusckb img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+
+
+
+
+
+/*! Conteudo Interno Geral */
+
+.conteudointerno {
+    position: relative;
+    background: #359381;
+    padding: 100px;
+    z-index: 2;
+}
+
+
+/*! Conteudo Interno h2*/
+
+.conteudointerno h2 {
+    font-size: 5em;
+    color: #fff;
+    margin-bottom: 1px;
+    font-family: 'Baloo 2', cursive;
+}
+
+
+/*! Conteudo Interno p */
+
+.conteudointerno p {
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+
+
+
+
+/** Rodape Geral */
+
+.divrodape {
+    color: #fff;
+    position: relative;
+    z-index: 4;
+    background: rgb(77, 71, 71);
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+
+}
+
+
+
+
+
+
+/*~ Escrita em dourado texto ( sobre ) */
+
+#dusckb01 {
+    color: goldenrod;
+    text-shadow: 1px 1.5px 1px black
+}
+
+
+
+
+
+
+
+/*^ Botao Para Voltar ao inicio Geral */
+
+.buttonback {
+    width: 100%;
+}
+
+
+/*^ Botao para Voltar ao Inicio a */
+
+.buttonback a {
+    font-family: 'Delicious Handrawn', sans-serif;
+    margin-bottom: 40px;
+    color: white;
+    background: #2b796a;
+    font-size: 20px;
+    font-weight: 300;
+   /*padding: 10px 696px 10px 696px;*/
+
+}
+
+
+/*^ Botao para Voltar ao Inicio Texto */
+
+#voltaraotopo {
+    text-decoration: none;
+    color: white;
+    font-family: 'Baloo 2', cursive;
+    width: 100%;
+}
+
+
+
+
+
+
+/*& Portifolios exemplos */
+
+.divimagensportfolios {
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+
+/*& Portifolio exemplo, Imagens */
+
+.imagensportfolios {
+    padding-bottom: 50px;
+    font-family: 'Baloo 2', cursive;
+}
+
+
+/*& Imagen Portifolio exemplo 1 */
+
+/*#port1 {
+    margin-bottom: 100px;
+
+    border: 4px solid white;
+}
+
+
+/*& Imagens Portifolio exemplo 2 */
+
+/*#port2 {
+    margin-bottom: 60px;
+
+    border: 4px solid white;
+}
+
+
+/*& Imagen Portifolio exemplo 3*/
+
+/*#port3 {
+    margin-bottom: 100px;
+    margin-right: 120px;
+
+    border: 4px solid white;
+}
+
+
+/*& Linha divisoria Superior, Portifolios */
+
+#linhadecima {
+    margin-bottom: 100px;
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    background: white;
+}
+
+
+/*& Linha divisoria Inferior, Portifolio */
+
+#linhadebaixo {
+    margin-top: 50px;
+    width: 100%;
+    height: 6px;
+    border-radius: 10px;
+    background: white;
+}
+
+/*& Animaçoes portifolios */
+
+#port1:hover {
+    width: 520px;
+    height: 320px;
+    transition: 0.5s;
+    border: 4px solid red
+
+}
+
+#portf1 {
+    display: inline-block;
+    position: relative;
+}
+
+#portf2 {
+    display: inline-block;
+    position: relative;
+}
+
+#portf3 {
+    display: inline-block;
+    position: relative;
+}
+
+#textofigcaption1 {
+    position: absolute;
+    right: 122px;
+    top: 123px;
+    color: black;
+    background: rgba(201, 201, 201, 0.714);
+    padding-left: 201px;
+    padding-right: 201px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Baloo 2', cursive;
+    font-size: 25px;
+}
+
+
+#textofigcaption2 {
+    position: absolute;
+    right: 385px;
+    top: 143px;
+    color: red;
+    transform: rotate(319deg);
+}
+
+#textofigcaption3 {
+    position: absolute;
+    right: 339px;
+    color: limegreen;
+    top: 127px;
+    transform: rotate(319deg);
+}
+
+
+
+
+
+
+/*! scroll bar */
+
+::-webkit-scrollbar {
+    width: 5px;
+    background: url(imagens/scrollbar.png)
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #000000ad;
+    border-radius: 10px;
+}
